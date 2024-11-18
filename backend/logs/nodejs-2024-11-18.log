@@ -1,0 +1,344 @@
+[2024-11-18 16:30:47] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: TypeError: logerror is not a function
+[2024-11-18 16:30:50] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: TypeError: logerror is not a function
+[2024-11-18 16:30:57] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: TypeError: logerror is not a function
+[2024-11-18 16:32:20] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: TypeError: logerror is not a function
+[2024-11-18 16:32:58] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: TypeError: logerror is not a function
+[2024-11-18 16:33:03] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: TypeError: logerror is not a function
+[2024-11-18 16:33:47] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: ReferenceError: logerror is not defined
+[2024-11-18 16:34:18] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: TypeError: logError is not a function
+[2024-11-18 16:35:37] - [ERROR] Error creating task Error: Task validation failed: priority: `` is not a valid enum value for path `priority`.
+    at ValidationError.inspect (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\error\validation.js:52:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at Object.inspect (node:internal/util/inspect:365:10)
+    at processLog (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:124:27)
+    at logError (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:150:3)
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:35:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    priority: ValidatorError: `` is not a valid enum value for path `priority`.
+        at validate (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaType.doValidate (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:3071:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'enum',
+      path: 'priority',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'Task validation failed'
+}
+[2024-11-18 16:35:52] - [ERROR] Error creating task Error: Task validation failed: priority: `` is not a valid enum value for path `priority`.
+    at ValidationError.inspect (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\error\validation.js:52:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at Object.inspect (node:internal/util/inspect:365:10)
+    at processLog (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:124:27)
+    at logError (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:150:3)
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:35:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    priority: ValidatorError: `` is not a valid enum value for path `priority`.
+        at validate (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaType.doValidate (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:3071:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'enum',
+      path: 'priority',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'Task validation failed'
+}
+[2024-11-18 17:13:49] - [ERROR] Error creating task Error: Task validation failed: assignedTo: Cast to ObjectId failed for value "[ '' ]" (type Array) at path "assignedTo" because of "BSONError"
+    at ValidationError.inspect (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\error\validation.js:52:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at Object.inspect (node:internal/util/inspect:365:10)
+    at processLog (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:124:27)
+    at logError (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:150:3)
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:35:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    assignedTo: CastError: Cast to ObjectId failed for value "[ '' ]" (type Array) at path "assignedTo" because of "BSONError"
+        at SchemaObjectId.cast (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schema\objectId.js:250:11)
+        at SchemaType.applySetters (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1432:22)
+        at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1128:16)
+        at model.Document (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:177:12)
+        at model.Model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:127:12)
+        at new model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:4682:15)
+        at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:18:18
+        at Layer.handle [as handle_request] (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\express\lib\router\route.js:149:13) {
+      stringValue: `"[ '' ]"`,
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: [Array],
+      path: 'assignedTo',
+      reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+          at new ObjectId (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\bson\lib\bson.cjs:2388:23)
+          at castObjectId (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\cast\objectid.js:25:12)
+          at SchemaObjectId.cast (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schema\objectId.js:248:12)
+          at SchemaType.applySetters (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1236:12)
+          at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1432:22)
+          at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1128:16)
+          at model.Document (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:177:12)
+          at model.Model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:127:12)
+          at new model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:4682:15)
+          at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:18:18,
+      valueType: 'Array'
+    }
+  },
+  _message: 'Task validation failed'
+}
+[2024-11-18 17:13:57] - [ERROR] Error creating task Error: Task validation failed: assignedTo: Cast to ObjectId failed for value "[ '' ]" (type Array) at path "assignedTo" because of "BSONError"
+    at ValidationError.inspect (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\error\validation.js:52:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at Object.inspect (node:internal/util/inspect:365:10)
+    at processLog (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:124:27)
+    at logError (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:150:3)
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:35:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    assignedTo: CastError: Cast to ObjectId failed for value "[ '' ]" (type Array) at path "assignedTo" because of "BSONError"
+        at SchemaObjectId.cast (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schema\objectId.js:250:11)
+        at SchemaType.applySetters (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1432:22)
+        at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1128:16)
+        at model.Document (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:177:12)
+        at model.Model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:127:12)
+        at new model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:4682:15)
+        at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:18:18
+        at Layer.handle [as handle_request] (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\express\lib\router\route.js:149:13) {
+      stringValue: `"[ '' ]"`,
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: [Array],
+      path: 'assignedTo',
+      reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+          at new ObjectId (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\bson\lib\bson.cjs:2388:23)
+          at castObjectId (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\cast\objectid.js:25:12)
+          at SchemaObjectId.cast (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schema\objectId.js:248:12)
+          at SchemaType.applySetters (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1236:12)
+          at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1432:22)
+          at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1128:16)
+          at model.Document (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:177:12)
+          at model.Model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:127:12)
+          at new model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:4682:15)
+          at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:18:18,
+      valueType: 'Array'
+    }
+  },
+  _message: 'Task validation failed'
+}
+[2024-11-18 17:14:10] - [ERROR] Error creating task Error: Task validation failed: assignedTo: Cast to ObjectId failed for value "[ '' ]" (type Array) at path "assignedTo" because of "BSONError"
+    at ValidationError.inspect (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\error\validation.js:52:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at Object.inspect (node:internal/util/inspect:365:10)
+    at processLog (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:124:27)
+    at logError (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:150:3)
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:35:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    assignedTo: CastError: Cast to ObjectId failed for value "[ '' ]" (type Array) at path "assignedTo" because of "BSONError"
+        at SchemaObjectId.cast (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schema\objectId.js:250:11)
+        at SchemaType.applySetters (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1432:22)
+        at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1128:16)
+        at model.Document (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:177:12)
+        at model.Model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:127:12)
+        at new model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:4682:15)
+        at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:18:18
+        at Layer.handle [as handle_request] (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\express\lib\router\route.js:149:13) {
+      stringValue: `"[ '' ]"`,
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: [Array],
+      path: 'assignedTo',
+      reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+          at new ObjectId (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\bson\lib\bson.cjs:2388:23)
+          at castObjectId (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\cast\objectid.js:25:12)
+          at SchemaObjectId.cast (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schema\objectId.js:248:12)
+          at SchemaType.applySetters (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1236:12)
+          at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1432:22)
+          at model.$set (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:1128:16)
+          at model.Document (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:177:12)
+          at model.Model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:127:12)
+          at new model (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\model.js:4682:15)
+          at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:18:18,
+      valueType: 'Array'
+    }
+  },
+  _message: 'Task validation failed'
+}
+[2024-11-18 17:16:06] - [ERROR] Error updating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:16:23] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:24:12] - [ERROR] Error in updating project
+[2024-11-18 17:24:22] - [ERROR] Error deleting task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:25:08] - [ERROR] Error updating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:25:39] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:34:52] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: ReferenceError: logerror is not defined
+[2024-11-18 17:35:40] - [ERROR] Unhandled Rejection at: [object Promise]. Reason: ReferenceError: logerror is not defined
+[2024-11-18 17:39:07] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:39:23] - [ERROR] Error deleting task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:40:37] - [ERROR] Error in deleting project Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:41:02] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:41:12] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:41:37] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:42:01] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:42:34] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:42:45] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:42:52] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:43:43] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:46:10] - [ERROR] Error creating task Error: Task validation failed: priority: `` is not a valid enum value for path `priority`.
+    at ValidationError.inspect (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\error\validation.js:52:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at Object.inspect (node:internal/util/inspect:365:10)
+    at processLog (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:124:27)
+    at logError (C:\Users\kamil\Desktop\projectmanager\backend\middleware\logger.js:150:3)
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:51:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    priority: ValidatorError: `` is not a valid enum value for path `priority`.
+        at validate (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaType.doValidate (C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at C:\Users\kamil\Desktop\projectmanager\backend\node_modules\mongoose\lib\document.js:3071:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'enum',
+      path: 'priority',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'Task validation failed'
+}
+[2024-11-18 17:46:21] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:46:51] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:47:04] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 17:47:17] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:49:56] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:50:03] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 17:50:15] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 18:06:29] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:42:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 18:07:55] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:44:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 18:11:50] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 18:12:08] - [ERROR] Error creating task Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2024-11-18 18:14:30] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:44:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 18:16:26] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:44:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 18:17:03] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:43:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 18:18:14] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:43:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-11-18 18:18:41] - [ERROR] Error creating task TypeError: Cannot read properties of undefined (reading 'toString')
+    at C:\Users\kamil\Desktop\projectmanager\backend\routes\taskcontroller.js:43:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
